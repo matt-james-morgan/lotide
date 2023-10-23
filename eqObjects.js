@@ -23,7 +23,7 @@ const eqObjects = function(obj1, obj2) {
     for (const key in obj1) {
       if (Array.isArray(obj1[key]) && Array.isArray(obj2[key])) {
 
-        if (eqArrays(obj1[key],obj2[key]) === false || obj1[key].length !== obj2[key].length) {
+        if (eqArrays(obj1[key],obj2[key]) === false) {
           
           return false;
         }
