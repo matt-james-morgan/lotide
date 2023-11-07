@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqualArrays = function(actual, expected) {
   if (actual === expected) {
     console.log(`\u2705 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -6,14 +6,5 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function(arr1, arr2){
-  let valid = true;
-  arr1.forEach((x, i) =>{
-    if(x !== arr2[i]){
-      valid = false;
-    }
-  });
-  return valid;
-}
+module.exports = assertEqualArrays;
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
