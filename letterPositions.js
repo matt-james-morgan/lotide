@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 const assertEqualArrays = function(arr1, arr2){
   let valid = true;
-  arr1.map((x, i) =>{
+  arr1.forEach((x, i) =>{
     if(x !== arr2[i]){
       valid = false;
     }

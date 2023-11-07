@@ -4,13 +4,11 @@ const assertEqual = function(actual, expected) {
   } else {
     console.log(`\uD83D\uDED1 Assertion Failed: ${actual} !== ${expected}`);
   }
-
-
 };
 
 const eqArrays = function(arr1, arr2){
   let valid = true;
-  arr1.map((x, i) =>{
+  arr1.forEach((x, i) =>{
     if(x !== arr2[i]){
       valid = false;
     }
